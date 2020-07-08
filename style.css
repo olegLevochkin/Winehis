@@ -1,0 +1,184 @@
+.wrapper{
+    position: relative;
+    width: 1920px;
+    height: 3603px;
+
+    background: #222222;
+}
+/*Header*/
+.logo{
+    position: absolute;
+    width: 127px;
+    height: 127px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+}
+.letter{
+    position: absolute;
+    width: 12.27px;
+    height: 15px;
+    left: 33px;
+    top: 56px;
+
+    /*color: #FFFFFF;*/
+}
+.logo-name{
+    position: absolute;
+    width: 47px;
+    height: 16px;
+    left: 46px;
+    top: 55px;
+
+    /*color: #ADC62C;*/
+}
+.short-logo{
+    visibility: hidden;
+}
+.burger-circle{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 1833px;
+    top: 41px;
+    border-radius: 50%;
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
+.burger{
+    position: absolute;
+    width: 13.05px;
+    height: 8.7px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ADC62C;
+}
+.menu{
+    position: absolute;
+    width: 551px;
+    height: 16px;
+    left: 1209px;
+    top: 55px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+/*Main Content*/
+
+/*First Section*/
+.first-arrow{
+    position: absolute;
+    width: 132px;
+    /*height: 0px;*/
+    left: 1665px;
+    top: 814px;
+
+    /*border: 2px solid #ADC62C;*/
+    box-sizing: border-box;
+
+}
+.second-arrow{
+
+    position: absolute;
+    width: 46px;
+    /*height: 0px;*/
+    left: 1647px;
+    top: 814px;
+
+    /*border: 2px solid #818181;*/
+    box-sizing: border-box;
+}
+.data{
+    position: absolute;
+    width: auto;
+    height: 66px;
+    left: 144px;
+    top: 787px;
+    font-family: Abraham Lincoln;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center
+
+}
+.day{
+    /*width: 33px;*/
+    /*height: 66px;*/
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 66px;
+    margin-right: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #ADC62C;
+}
+.month{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 38px;
+
+    text-align: center;
+
+    color: #818181;
+
+}
+.slesh{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 66px;
+
+    text-align: center;
+    padding-right: 15px;
+
+    color: #818181;
+}
+.title{
+    position: absolute;
+    width: 818px;
+    height: 109px;
+    left: 567px;
+    top: 433px;
+
+    font-family: Abraham Lincoln;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 109px;
+    line-height: 109px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.sub-title{
+    position: absolute;
+    width: 558px;
+    height: 78px;
+    left: 697px;
+    top: 551px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    /* or 186% */
+
+    text-align: center;
+
+    color: #D3D3D3;
+}
