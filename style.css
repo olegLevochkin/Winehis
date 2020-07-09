@@ -2,12 +2,20 @@ body{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+
+    background: #222222;
+    width: 100%;
+
+
+
 }
 .wrapper{
     position: relative;
     width: 1920px;
     height: 3603px;
-
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
     background: #222222;
 }
 /*Header*/
@@ -27,7 +35,7 @@ header {
     background: #000000;
 }
 .logo{
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -36,7 +44,7 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .short-logo{
-    visibility: visible;
+    visibility: hidden;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -78,45 +86,55 @@ header {
 /*Main Content*/
 
 /*First Section*/
+.first-section{
+    height: 975px;
+    width: auto;
+}
 .first-picture{
     position: absolute;
     width: 1328px;
     height: 975px;
-    left: -1070px;
     top: 0px;
-    background: url('https://s3-alpha-sig.figma.com/img/ec1f/8ab0/e16e2b86eb52bca774dec352be277911?Expires=1595203200&Signature=CGOpXs56-lCbt6M4PW6S56rRcejZBe1n-RfQRDTPNnPyENhvaLhzedOw-3GjxVoxBbayyV0xPJoPuv7sQnN5ntOI~84P8hXtd93h7Bv4VHiE-7B1ZqdDT90vapyHUvjGltYss-Cw~8Xi0PkQXg82bbzenkJrfiHdBEd--gghAUEshT3TLv2Ils39BoXvQSx8owup9cjG7lRKnEnx80pnr87C4XPhpS0m5A8BnZAW~81h81GUg6el7dxaaCNwK73zjkX9y7dcpAS7JiO-NQb9C~KMic6doYCXfEq4gpogShjZBO-~KIctDYoGDbVhCF6EeIyWyy6A6gnw6JXjkFSAfg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+    background: url('./img/first.png');
+    background-repeat: no-repeat;
+}
+.second-picture{
+    position: absolute;
+    width: 1328px;
+    height: 893px;
+    left: 312px;
+    top: 0px;
 
+    background: url('./img/second.png');
+}
+.third-picture{
+    position: absolute;
+    width: 1328px;
+    height: 975px;
+    left: 1694px;
+    top: 0px;
 
-    opacity: 0.3;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    background: url('./img/third.png');
+    background-repeat: no-repeat;
 }
 .first-arrow{
     position: absolute;
     width: 132px;
-    /*height: 0px;*/
-    left: 1665px;
+    left: 1685px;
     top: 814px;
-
-    /*border: 2px solid #ADC62C;*/
     box-sizing: border-box;
 
 }
 .second-arrow{
-
     position: absolute;
     width: 46px;
-    /*height: 0px;*/
-    left: 1647px;
+    left: 1607px;
     top: 814px;
-
-    /*border: 2px solid #818181;*/
     box-sizing: border-box;
 }
 .data{
     position: absolute;
+    z-index: 2;
     width: auto;
     height: 66px;
     left: 144px;
@@ -167,17 +185,16 @@ header {
     color: #818181;
 }
 .title{
+
     position: absolute;
-    width: 818px;
+    width: 900px;
     height: 109px;
-    left: 567px;
-    top: 433px;
+    left: 530px;
+    top: 355px;
 
     font-family: Abraham Lincoln;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 109px;
-    line-height: 109px;
+    font-size: 85px;
+    line-height: 85px;
     /* identical to box height */
 
     text-align: center;
@@ -189,16 +206,113 @@ header {
     width: 558px;
     height: 78px;
     left: 697px;
-    top: 551px;
+    top: 531px;
 
     font-family: Roboto;
     font-style: italic;
     font-weight: 500;
     font-size: 14px;
     line-height: 26px;
-    /* or 186% */
 
     text-align: center;
 
     color: #D3D3D3;
+}
+.main-grape{
+    position: absolute;
+    width: 599px;
+    height: 1014px;
+    left: 634px;
+    top: 174px;
+    background: url("./img/mainGrape.png");
+}
+.bottle{
+    position: absolute;
+    width: 270px;
+    height: 1101px;
+    left: 841px;
+    top: 380px;
+
+    background: url("./img/bottle.png");
+}
+.shadow{
+    position: absolute;
+    width: 759px;
+    height: 341px;
+    left: 603px;
+    top: 380px;
+
+    background: #000000;
+    opacity: 0.5;
+    filter: blur(111px);
+    border-radius: 170.5px;
+}
+.single-grape-one{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 438.11px;
+    top: 355.08px;
+
+    background: url('./img/smallGrape.png');
+    background-size: cover;
+    opacity: 0.7;
+    filter: blur(4px);
+    transform: matrix(-0.87, -0.5, -0.5, 0.87, 0, 0);
+}
+.single-grape-two{
+    position: absolute;
+    width: 96.04px;
+    height: 79.84px;
+    left: 1437.91px;
+    top: 697.63px;
+
+    background: url('./img/smallGrape.png');
+    background-size: cover;
+    opacity: 0.7;
+    transform: matrix(0.69, -0.73, -0.73, -0.69, 0, 0);
+}
+.single-grape-three{
+    position: absolute;
+    width: 229.21px;
+    height: 190.54px;
+    left: 1750px;
+    top: 246.32px;
+
+    background: url('./img/smallGrape.png');
+    background-size: cover;
+    opacity: 0.6;
+    filter: blur(6px);
+    transform: matrix(-0.97, -0.26, -0.26, 0.97, 0, 0);
+}
+.single-grape-four{
+    position: absolute;
+    width: 492px;
+    height: 409px;
+    left: -171px;
+    top: 723.09px;
+
+    background: url('./img/smallGrape.png');
+    background-size: cover;
+    filter: blur(20px);
+    transform: rotate(-9.25deg);
+}
+
+/*second section*/
+
+.second-section{
+    width: 2450px;
+    height: 1535px;
+    background: url("./img/SecondSection.png");
+    background-repeat: no-repeat;
+}
+.circle-centre{
+    position: absolute;
+    width: 579px;
+    height: 579px;
+    left: 677px;
+    top: 1651px;
+    border-radius: 50%;
+    border: solid 2px #D4C417;
+    text-align: center;
 }
