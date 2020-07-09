@@ -1,3 +1,8 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
 .wrapper{
     position: relative;
     width: 1920px;
@@ -6,35 +11,35 @@
     background: #222222;
 }
 /*Header*/
-.logo{
+header {
+    /*background-color: white;*/
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.logo-wrapper{
     position: absolute;
     width: 127px;
     height: 127px;
     left: 0px;
     top: 0px;
-
     background: #000000;
 }
-.letter{
+.logo{
+    visibility: hidden;
     position: absolute;
-    width: 12.27px;
-    height: 15px;
-    left: 33px;
-    top: 56px;
-
-    /*color: #FFFFFF;*/
+    top: 50%;
+    transform: translate(0, -50%);
 }
-.logo-name{
-    position: absolute;
-    width: 47px;
-    height: 16px;
-    left: 46px;
-    top: 55px;
-
-    /*color: #ADC62C;*/
+.logo-picture{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .short-logo{
-    visibility: hidden;
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 .burger-circle{
     position: absolute;
@@ -73,6 +78,21 @@
 /*Main Content*/
 
 /*First Section*/
+.first-picture{
+    position: absolute;
+    width: 1328px;
+    height: 975px;
+    left: -1070px;
+    top: 0px;
+    background: url('https://s3-alpha-sig.figma.com/img/ec1f/8ab0/e16e2b86eb52bca774dec352be277911?Expires=1595203200&Signature=CGOpXs56-lCbt6M4PW6S56rRcejZBe1n-RfQRDTPNnPyENhvaLhzedOw-3GjxVoxBbayyV0xPJoPuv7sQnN5ntOI~84P8hXtd93h7Bv4VHiE-7B1ZqdDT90vapyHUvjGltYss-Cw~8Xi0PkQXg82bbzenkJrfiHdBEd--gghAUEshT3TLv2Ils39BoXvQSx8owup9cjG7lRKnEnx80pnr87C4XPhpS0m5A8BnZAW~81h81GUg6el7dxaaCNwK73zjkX9y7dcpAS7JiO-NQb9C~KMic6doYCXfEq4gpogShjZBO-~KIctDYoGDbVhCF6EeIyWyy6A6gnw6JXjkFSAfg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+
+
+    opacity: 0.3;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
 .first-arrow{
     position: absolute;
     width: 132px;
